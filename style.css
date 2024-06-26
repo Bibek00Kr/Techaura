@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin-top: 10px ;
+}
+html{
+    scroll-snap-type: y mandatory;
+}
+html::-webkit-scrollbar{
+    width: 0.8vw;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(66, 66, 66);
+    border-radius: 20px;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-margin-top: 30px;
+}
+nav {
+    height: 30px;
+    background-color: black;
+    color: white; 
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* nav div{
+    display: flex;
+    margin-inline-start: auto;
+    justify-content: space-between;
+    padding: 20px;
+
+} */
+
+#page1{
+    background-image: linear-gradient(to right, red, blue);
+}
+#page2{
+    background-image: linear-gradient(to right, rgb(141, 173, 82), rgb(212, 95, 27));
+
+}
+#page3{
+    background-image: linear-gradient(to right, red, rgb(23, 23, 45));
+
+}
+#page4{
+    background-image: linear-gradient(to right, rgb(185, 150, 150), blue);
+
+}
+#page5{
+    background-image: linear-gradient(to right, rgb(52, 25, 25), rgb(146, 229, 135));
+
+}
+footer{
+    text-align: center;
+    background-color:rgb(232, 232, 152);
+
+}
